@@ -37,7 +37,6 @@ INSTALLED_APPS = [
     'admins',
     'attendances',
     'course_days',
-    'authentication',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -56,6 +55,7 @@ EST_FRAMEWORK = {
         'rest_framework.permissions.IsAuthenticated',
     ),
 }
+
 
 from datetime import timedelta
 
