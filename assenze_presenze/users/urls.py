@@ -16,7 +16,18 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+pythonfrom django.urls import path
+from .views import ParticipantProfileView, CurrentUserView
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    # Profilo partecipante
+    path('participant/profile/', ParticipantProfileView.as_view(), name='participant-profile'),
+    
+    # Utente corrente
+    path('me/', CurrentUserView.as_view(), name='current-user'),
 ]
+
+
+    
