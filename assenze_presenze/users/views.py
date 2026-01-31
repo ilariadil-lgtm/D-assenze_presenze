@@ -44,7 +44,7 @@ class ParticipantProfileView(APIView):
             "data": serializer.data
         })
 
-    # Se vuoi tenere PUT, fallo chiamare patch (così non duplichi logica)
+    
     def put(self, request):
         return self.patch(request)
 
